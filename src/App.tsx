@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import logoSociiz from './assets/logo-sociiz.png'
+// import logoSociiz from './assets/logo-sociiz.png'
 import backgroundSociiz from './assets/mulher-olhando-para-o-horizonte.f3df96c9088f21b1.jpg'
 
 function App() {
@@ -17,14 +17,14 @@ function App() {
   }, []);
   return (
     <div
-      className="relative w-screen h-screen bg-cover bg-top flex items-center justify-center text-white"
+      className="relative w-screen h-screen bg-contain bg-no-repeat bg-top flex items-center justify-center text-white"
       style={{ backgroundImage: `url(${import.meta.env.VITE_BACKGROUND_IMAGE || backgroundSociiz})` }}
     >
-      <img
+      {/* <img
         src={logoSociiz}
         alt="Logo Sociiz"
         className="absolute top-6 left-6 w-40 h-auto"
-      />
+      /> */}
     </div>
   )
 }
