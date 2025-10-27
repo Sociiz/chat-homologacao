@@ -17,17 +17,14 @@ function App() {
   }, []);
   return (
     <div
-      className="relative w-screen h-screen bg-cover bg-center flex items-center justify-center text-white"
-      style={{ backgroundImage: `url(${backgroundSociiz})` }}
+      className="relative w-screen h-screen bg-cover bg-top flex items-center justify-center text-white"
+      style={{ backgroundImage: `url(${import.meta.env.VITE_BACKGROUND_IMAGE || backgroundSociiz})` }}
     >
       <img
         src={logoSociiz}
         alt="Logo Sociiz"
         className="absolute top-6 left-6 w-40 h-auto"
       />
-      <h2 className="text-2xl md:text-4xl font-mono text-center drop-shadow-lg">
-        JUNTOS, PENSANDO NO FUTURO.
-      </h2>
     </div>
   )
 }
