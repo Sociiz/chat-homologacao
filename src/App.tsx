@@ -15,14 +15,12 @@ function App() {
     };
   }, []);
   return (
-    <div
-      className="relative w-screen h-screen bg-contain lg:bg-cover bg-no-repeat bg-top-left flex items-center justify-center text-white"
-      style={{
-        backgroundImage: `url(${
-          import.meta.env.VITE_BACKGROUND_IMAGE || backgroundSociiz
-        })`,
-      }}
-    >
+    <div className="relative w-full min-h-screen overflow-y-auto">
+      <img
+        src={import.meta.env.VITE_BACKGROUND_IMAGE || backgroundSociiz}
+        alt="Background"
+        className="w-full h-auto object-cover block"
+      />
       {/* <img
         src={logoSociiz}
         alt="Logo Sociiz"
